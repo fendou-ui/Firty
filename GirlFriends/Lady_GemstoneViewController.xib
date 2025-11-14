@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Lady__GemstoneViewController" customModule="GirlFriends" customModuleProvider="target">
+            <connections>
+                <outlet property="lady_collectionView" destination="oWR-v2-W4T" id="2CK-Fb-ZKw"/>
+                <outlet property="lady_labels" destination="IZY-PM-GMU" id="hZe-Mx-66W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lady-BJ" translatesAutoresizingMaskIntoConstraints="NO" id="YPr-YC-NBu">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lady-gemstone-top" translatesAutoresizingMaskIntoConstraints="NO" id="lxj-fG-adc">
+                    <rect key="frame" x="16" y="113" width="361" height="174"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="174" id="sUH-UM-y4d"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRb-Fq-akI">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" tag="121" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCK-Sr-Dzn">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="xgx-bo-wfr"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="lady-back"/>
+                            <connections>
+                                <action selector="lady_back:" destination="-1" eventType="touchUpInside" id="Lum-td-xAs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="NCK-Sr-Dzn" firstAttribute="top" secondItem="jRb-Fq-akI" secondAttribute="top" id="AQD-P6-b1O"/>
+                        <constraint firstItem="NCK-Sr-Dzn" firstAttribute="leading" secondItem="jRb-Fq-akI" secondAttribute="leading" id="E2d-Rh-GLR"/>
+                        <constraint firstAttribute="bottom" secondItem="NCK-Sr-Dzn" secondAttribute="bottom" id="co5-yf-maz"/>
+                        <constraint firstAttribute="height" constant="44" id="q0S-Zv-zI2"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZY-PM-GMU">
+                    <rect key="frame" x="228.99999999999997" y="210" width="59.666666666666657" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="XdK-E8-Xd8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lady-gemstone-!" translatesAutoresizingMaskIntoConstraints="NO" id="xZg-B8-7mA">
+                    <rect key="frame" x="16" y="303" width="24" height="24"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gems can be used to create your own character" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTe-hI-wPm">
+                    <rect key="frame" x="43" y="298" width="307" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="8K1-FG-jLD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oWR-v2-W4T">
+                    <rect key="frame" x="0.0" y="362" width="393" height="456"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xrp-FI-Wa2">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jRb-Fq-akI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2Np-H6-ZPu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vTe-hI-wPm" secondAttribute="trailing" constant="43" id="4Ed-zO-US3"/>
+                <constraint firstItem="vTe-hI-wPm" firstAttribute="top" secondItem="lxj-fG-adc" secondAttribute="bottom" constant="11" id="E0W-bf-xrc"/>
+                <constraint firstItem="YPr-YC-NBu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EIC-ql-n5H"/>
+                <constraint firstItem="xZg-B8-7mA" firstAttribute="top" secondItem="lxj-fG-adc" secondAttribute="bottom" constant="16" id="M8J-sx-lqn"/>
+                <constraint firstAttribute="bottom" secondItem="YPr-YC-NBu" secondAttribute="bottom" id="MCe-EW-193"/>
+                <constraint firstItem="IZY-PM-GMU" firstAttribute="top" secondItem="jRb-Fq-akI" secondAttribute="bottom" constant="107" id="Teu-vQ-7dU"/>
+                <constraint firstItem="lxj-fG-adc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Y80-cX-bVP"/>
+                <constraint firstItem="jRb-Fq-akI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aTY-Wj-4gL"/>
+                <constraint firstItem="xZg-B8-7mA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="d4h-WY-qkZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oWR-v2-W4T" secondAttribute="bottom" id="duw-fR-X2g"/>
+                <constraint firstItem="YPr-YC-NBu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eSt-21-vF6"/>
+                <constraint firstItem="lxj-fG-adc" firstAttribute="top" secondItem="jRb-Fq-akI" secondAttribute="bottom" constant="10" id="g9a-S5-e7B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YPr-YC-NBu" secondAttribute="trailing" id="iyp-bh-2zS"/>
+                <constraint firstItem="oWR-v2-W4T" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jtd-o6-eL7"/>
+                <constraint firstItem="vTe-hI-wPm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="43" id="k1t-df-b8a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oWR-v2-W4T" secondAttribute="trailing" id="ks0-te-Yho"/>
+                <constraint firstItem="IZY-PM-GMU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="229" id="oIk-lE-m6C"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lxj-fG-adc" secondAttribute="trailing" constant="16" id="p5J-2q-KGr"/>
+                <constraint firstItem="oWR-v2-W4T" firstAttribute="top" secondItem="vTe-hI-wPm" secondAttribute="bottom" constant="16" id="rls-aO-X0N"/>
+                <constraint firstItem="jRb-Fq-akI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="w37-EA-SHY"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lady-BJ" width="375" height="812"/>
+        <image name="lady-back" width="24" height="24"/>
+        <image name="lady-gemstone-!" width="24" height="24"/>
+        <image name="lady-gemstone-top" width="343" height="174"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
