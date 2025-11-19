@@ -11,7 +11,7 @@ class Lady_PartnerViewController: UIViewController {
 
     @IBAction func lady_rootViewController(_ sender: Any) {
         if let window = UIApplication.shared.windows.first {
-            window.rootViewController = UINavigationController(rootViewController: Lady_HomeViewController())
+            window.rootViewController = Lady_TabBarController()
         }
     }
     
