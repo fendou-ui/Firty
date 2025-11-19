@@ -2,7 +2,12 @@
 target 'GirlFriends' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+
+  pod 'SwiftyStoreKit'
   pod 'SVProgressHUD'
+  pod 'IQKeyboardManager'
+  pod 'Alamofire'
+  pod 'SocketRocket'
 end
 
 post_install do |installer|
