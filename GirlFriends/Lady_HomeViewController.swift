@@ -141,9 +141,9 @@ class Lady_HomeViewController: UIViewController {
     private func lady_getVideosCollections() {
         lady_items = [
             ["lady_image":"lady_6156", "lady_name":"", "lady_desc":"", "lady_video":"lady_sonw"],
-            ["lady_image":"lady_6157", "lady_name":"", "lady_desc":"", "lady_video":"lady_shopping"],
-            ["lady_image":"lady_6158", "lady_name":"", "lady_desc":"", "lady_video":"lady_slink"],
             ["lady_image":"lady_6159", "lady_name":"", "lady_desc":"", "lady_video":"lady_sdance"],
+            ["lady_image":"lady_6158", "lady_name":"", "lady_desc":"", "lady_video":"lady_slink"],
+            ["lady_image":"lady_6157", "lady_name":"", "lady_desc":"", "lady_video":"lady_shopping"],
         ]
     }
 }

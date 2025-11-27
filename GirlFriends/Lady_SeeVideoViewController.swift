@@ -10,7 +10,8 @@ class Lady_SeeVideoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .black
-        
+        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback)
+        try? AVAudioSession.sharedInstance().setActive(true)
     }
 
     @IBAction func lady_backAction(_ sender: Any) {
@@ -18,14 +19,14 @@ class Lady_SeeVideoViewController: UIViewController {
     }
     
     private func lady_appInitConfigerVideo() {
-        if let path = Bundle.main.path(forResource: self.video_adress, ofType: "mp4") {
+        if let path = Bundle.main.url(forResource: self.video_adress, withExtension: "mp4") {
             
-            let url = URL(fileURLWithPath: path)
+//            let url = URL(fileURLWithPath: path)
 
             lady_layer?.removeFromSuperlayer()
             lady_player?.pause()
             
-            let player = AVPlayer(url: url)
+            let player = AVPlayer(url: path)
             let layer = AVPlayerLayer(player: player)
             layer.videoGravity = .resizeAspectFill
             layer.frame = view.bounds
@@ -41,7 +42,9 @@ class Lady_SeeVideoViewController: UIViewController {
                 object: player.currentItem
             )
             
-            player.play()
+            DispatchQueue.main.async {
+                player.play()
+            }
         }
     }
     
