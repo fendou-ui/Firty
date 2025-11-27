@@ -177,13 +177,11 @@ extension Lady_HomeViewController: UICollectionViewDataSource, UICollectionViewD
         
         if lady_select == true {
             let dict = lady_items[indexPath.row]
-            let lady_play = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: dict["lady_video"], ofType: "mp4")!))
-            let lady_player = AVPlayerViewController()
-            lady_player.player = lady_play
-            lady_player.modalPresentationStyle = .fullScreen
-            self.present(lady_player, animated: true) {
-                lady_play.play()
-            }
+            let ladyVC = Lady_SeeVideoViewController()
+            ladyVC.video_adress = dict["lady_video"]!
+            ladyVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(ladyVC, animated: true)
+            
         }else {
             let dict = lady_items[indexPath.row]
             let chat = Lady_ChatTextViewController()
@@ -214,5 +212,26 @@ extension Lady_HomeViewController: UICollectionViewDataSource, UICollectionViewD
             return CGSize(width: UIScreen.main.bounds.width - 32, height: 150)
         }
         
+    }
+    
+    func lady_playLocalVideo(videoName: String) {
+        guard let videoPath = Bundle.main.path(forResource: videoName, ofType: "mp4") else {
+            print("错误：找不到视频文件 \(videoName).mp4")
+            return
+        }
+        let fileManager = FileManager.default
+        guard fileManager.fileExists(atPath: videoPath) else {
+            print("错误：视频文件不存在于路径：\(videoPath)")
+            return
+        }
+
+        let videoURL = URL(fileURLWithPath: videoPath)
+        let player = AVPlayer(url: videoURL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        playerViewController.modalPresentationStyle = .fullScreen
+        self.present(playerViewController, animated: true) {
+            player.play()
+        }
     }
 }
