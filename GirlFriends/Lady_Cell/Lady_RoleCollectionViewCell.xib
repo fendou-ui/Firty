@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Lady_RoleCollectionViewCell" customModule="GirlFriends" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIn-jY-WGx">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="axV-ab-2mi">
+                                <rect key="frame" x="0.0" y="0.0" width="153" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="bJA-Db-4rE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8w3-5f-Mhj">
+                                <rect key="frame" x="165" y="8" width="50" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="s7X-Re-hD2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.0039215686274509803" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY5-5e-QQs">
+                                <rect key="frame" x="165" y="36" width="166" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lady-diaogue" translatesAutoresizingMaskIntoConstraints="NO" id="mX8-Lw-PQA">
+                                <rect key="frame" x="180" y="106" width="128" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="FMx-z6-Jn8"/>
+                                    <constraint firstAttribute="width" constant="128" id="sAf-UZ-zlc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dialogue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vo-fd-IGu">
+                                <rect key="frame" x="202.66666666666666" y="112" width="82.999999999999972" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dY5-5e-QQs" firstAttribute="leading" secondItem="axV-ab-2mi" secondAttribute="trailing" constant="12" id="0bY-Qc-NRa"/>
+                            <constraint firstItem="dY5-5e-QQs" firstAttribute="top" secondItem="8w3-5f-Mhj" secondAttribute="bottom" id="9BA-n6-HqS"/>
+                            <constraint firstItem="axV-ab-2mi" firstAttribute="leading" secondItem="bIn-jY-WGx" secondAttribute="leading" id="DI5-g4-CaS"/>
+                            <constraint firstItem="0Vo-fd-IGu" firstAttribute="centerX" secondItem="mX8-Lw-PQA" secondAttribute="centerX" id="WnW-SJ-7Fx"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dY5-5e-QQs" secondAttribute="bottom" constant="48" id="aPI-OG-QuQ"/>
+                            <constraint firstItem="0Vo-fd-IGu" firstAttribute="centerY" secondItem="mX8-Lw-PQA" secondAttribute="centerY" id="cjm-4E-PhX"/>
+                            <constraint firstAttribute="bottom" secondItem="axV-ab-2mi" secondAttribute="bottom" id="fYe-ZU-9qI"/>
+                            <constraint firstAttribute="bottom" secondItem="mX8-Lw-PQA" secondAttribute="bottom" constant="8" id="h9r-bG-dXM"/>
+                            <constraint firstAttribute="trailing" secondItem="dY5-5e-QQs" secondAttribute="trailing" constant="12" id="m0R-ru-lj7"/>
+                            <constraint firstItem="axV-ab-2mi" firstAttribute="top" secondItem="bIn-jY-WGx" secondAttribute="top" id="psW-VU-dll"/>
+                            <constraint firstItem="8w3-5f-Mhj" firstAttribute="top" secondItem="bIn-jY-WGx" secondAttribute="top" constant="8" id="qlX-6l-ZXj"/>
+                            <constraint firstItem="mX8-Lw-PQA" firstAttribute="leading" secondItem="axV-ab-2mi" secondAttribute="trailing" constant="27" id="rwp-Lc-QbN"/>
+                            <constraint firstItem="8w3-5f-Mhj" firstAttribute="leading" secondItem="axV-ab-2mi" secondAttribute="trailing" constant="12" id="tVU-oy-2aV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="bIn-jY-WGx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0SM-Tv-cd0"/>
+                <constraint firstAttribute="bottom" secondItem="bIn-jY-WGx" secondAttribute="bottom" id="9CM-OZ-7Eg"/>
+                <constraint firstAttribute="trailing" secondItem="bIn-jY-WGx" secondAttribute="trailing" id="LYX-XY-pyd"/>
+                <constraint firstItem="bIn-jY-WGx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qHc-eA-oE0"/>
+            </constraints>
+            <connections>
+                <outlet property="lady_desc_label" destination="dY5-5e-QQs" id="H18-N3-O3F"/>
+                <outlet property="lady_imageView" destination="axV-ab-2mi" id="6ey-4v-bfi"/>
+                <outlet property="lady_name_label" destination="8w3-5f-Mhj" id="eQZ-QR-B4M"/>
+                <outlet property="lady_view" destination="bIn-jY-WGx" id="nzL-JO-QEJ"/>
+            </connections>
+            <point key="canvasLocation" x="87.786259541984734" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="lady-diaogue" width="128" height="36"/>
+    </resources>
+</document>

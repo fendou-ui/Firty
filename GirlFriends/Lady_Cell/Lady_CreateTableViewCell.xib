@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="Lady_CreateTableViewCell" customModule="GirlFriends" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="789-iB-tqj">
+                        <rect key="frame" x="16" y="5" width="361" height="140"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EKn-xV-i7b">
+                                <rect key="frame" x="0.0" y="0.0" width="153" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="Sbl-KE-6Ho"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvy-Dq-dgT">
+                                <rect key="frame" x="165" y="8" width="50" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="gxi-ov-37o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5W-bw-TRA">
+                                <rect key="frame" x="165" y="36" width="184" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lady-diaogue" translatesAutoresizingMaskIntoConstraints="NO" id="xsg-Gh-UBi">
+                                <rect key="frame" x="180" y="96" width="128" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="SZI-Cr-YHV"/>
+                                    <constraint firstAttribute="height" constant="36" id="qiu-t8-gyn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dialogue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-T2-IVs">
+                                <rect key="frame" x="202.66666666666666" y="102" width="82.999999999999972" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="n5W-bw-TRA" firstAttribute="top" secondItem="Gvy-Dq-dgT" secondAttribute="bottom" id="2fw-d7-cYg"/>
+                            <constraint firstAttribute="bottom" secondItem="EKn-xV-i7b" secondAttribute="bottom" id="3RP-da-QEv"/>
+                            <constraint firstItem="Gvy-Dq-dgT" firstAttribute="leading" secondItem="EKn-xV-i7b" secondAttribute="trailing" constant="12" id="3lF-qa-OgD"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="n5W-bw-TRA" secondAttribute="bottom" constant="48" id="4v2-pu-cf5"/>
+                            <constraint firstItem="n5W-bw-TRA" firstAttribute="leading" secondItem="EKn-xV-i7b" secondAttribute="trailing" constant="12" id="FFa-Zb-iSM"/>
+                            <constraint firstItem="EKn-xV-i7b" firstAttribute="leading" secondItem="789-iB-tqj" secondAttribute="leading" id="IXW-1k-5YH"/>
+                            <constraint firstItem="EKn-xV-i7b" firstAttribute="top" secondItem="789-iB-tqj" secondAttribute="top" id="J7Q-7a-BPv"/>
+                            <constraint firstAttribute="bottom" secondItem="xsg-Gh-UBi" secondAttribute="bottom" constant="8" id="MY8-Ov-4sL"/>
+                            <constraint firstItem="Gvy-Dq-dgT" firstAttribute="top" secondItem="789-iB-tqj" secondAttribute="top" constant="8" id="Q1P-Uq-pCq"/>
+                            <constraint firstItem="Ne7-T2-IVs" firstAttribute="centerX" secondItem="xsg-Gh-UBi" secondAttribute="centerX" id="ahb-UP-olj"/>
+                            <constraint firstItem="Ne7-T2-IVs" firstAttribute="centerY" secondItem="xsg-Gh-UBi" secondAttribute="centerY" id="kd6-QV-w2T"/>
+                            <constraint firstItem="xsg-Gh-UBi" firstAttribute="leading" secondItem="EKn-xV-i7b" secondAttribute="trailing" constant="27" id="n0M-EM-Fvg"/>
+                            <constraint firstAttribute="trailing" secondItem="n5W-bw-TRA" secondAttribute="trailing" constant="12" id="xjk-Jq-nRD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="789-iB-tqj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="FcN-dd-0II"/>
+                    <constraint firstItem="789-iB-tqj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="HOv-VM-Yo1"/>
+                    <constraint firstAttribute="bottom" secondItem="789-iB-tqj" secondAttribute="bottom" constant="5" id="kOP-vj-1oZ"/>
+                    <constraint firstAttribute="trailing" secondItem="789-iB-tqj" secondAttribute="trailing" constant="16" id="m7W-AJ-9Pz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lady_desc_label" destination="n5W-bw-TRA" id="Bu8-S3-CAX"/>
+                <outlet property="lady_imageView" destination="EKn-xV-i7b" id="9qc-Qr-yOa"/>
+                <outlet property="lady_name_label" destination="Gvy-Dq-dgT" id="sPc-dc-hks"/>
+                <outlet property="lady_view" destination="789-iB-tqj" id="abe-pb-yZz"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lady-diaogue" width="128" height="36"/>
+    </resources>
+</document>
